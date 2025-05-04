@@ -77,8 +77,7 @@ class FinancialNovelGenerator:
         self.game_state = GameState()
         self.client = genai.Client(api_key=API_KEY)
         self.create_asset_directories()
-        self.user_data_path = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(__file__))), 
-                                          "interests.json")
+        self.user_data_path = "interests.json"
         self.load_user_data()
 
     def load_user_data(self):
